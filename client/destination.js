@@ -32,7 +32,7 @@ L.Control.geocoder({
   .addTo(map);
 
   function setAllPropertiesToNull(obj) {
-    list=null;
+    
     Object.keys(obj).forEach(key => delete obj[key]);
     console.log(obj);
   }

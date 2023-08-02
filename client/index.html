@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeepney Route Mapping System</title>
+    <title>OSMmap</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -17,11 +17,13 @@
 
      <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
-     <link href="https://cdn.jsdelivr.net/npm/leaflet.control.layers.tree@1.1.0/L.Control.Layers.Tree.min.css" rel="stylesheet">
-        
+     <div class="nine">
+        <h1>LARGA<span>Jeepney-Code Mapping</span></h1>
+      </div>
 
 </head>
 <body>
+    <div class="background-image"></div> 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.79.0/dist/L.Control.Locate.min.js" charset="utf-8"></script>
@@ -29,13 +31,9 @@
     <!-- Original Goecoder code -->
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     
-    
-    `<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.control.layers.tree@1.1.0/L.Control.Layers.Tree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
     
     <main>
-        <h1>Jeepney Route Mapping System</h1>
         <div id="map"></div>
 
         
@@ -43,7 +41,6 @@
     </main>
     
     <script src= "index.js"> </script> 
-    
     <script type="module"  src="destination.js"></script> 
     
     
