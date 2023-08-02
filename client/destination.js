@@ -14,7 +14,7 @@ var showLayers={
 }
 
 var baseLayer = {
-  "Scan 1km around Destination" : osm
+  "Available Routes" : osm
 }
 
  class Scan {

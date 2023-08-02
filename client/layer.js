@@ -1,6 +1,5 @@
 import * as route from './data.js'
 
-import { showSearch } from './connect.js' 
 
 export var layers = [
 

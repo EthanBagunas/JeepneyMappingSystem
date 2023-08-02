@@ -4,7 +4,7 @@ export async function searchBackend(searchValue) {
         const data = await response.json();
     
         var jsonDataString = JSON.stringify(data);
-        console.log(jsonDataString);
+        
     
         var jsonData = JSON.parse(jsonDataString);
     
