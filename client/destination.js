@@ -78,4 +78,3 @@ L.Control.geocoder({
   
     }
   }
-  

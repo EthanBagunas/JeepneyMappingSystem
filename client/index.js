@@ -21,6 +21,29 @@ var redIcon = L.icon({
   
 
   L.control.locate().addTo(map);
+  const button= document.getElementById('getlocation')
+
+ function gotLocation(position ){
+     const lat= position.coords.latitude
+     const long= position.coords.longitude
+     L.marker([lat, long]).addTo(map)
+     console.log(lat, long);
+     
+  } 
+
+  function notget(){
+    console.log("There was no data available")
+  }
+  
+  button.addEventListener('click', async ()=> {
+    navigator.geolocation.getCurrentPosition(gotLocation, notget, {enableHighAccuracy: true})     
+  })  
+
+  
+
+
+
+  
 
 
   
